@@ -21,6 +21,29 @@ Table of Contents
 
 ![overview](./figures/overview.png)
 
+## Methodology Workflow
+
+1. Compute client gradients
+2. Construct orthogonal perturbation subspace
+3. Perform Bayesian sampling inside orthogonal space
+4. Generate protected gradients
+5. Evaluate resistance against inversion attacks
+
+
+## Repository Structure
+
+```text
+censor/
+│── configs/                 # Experiment configs
+│── inversefed/              # Gradient inversion implementations
+│── models/                  # Network architectures
+│── figures/                 # README figures
+│── data/                    # Datasets
+│── run_rec.py               # Main evaluation script
+│── utils.py                 # Helper utilities
+│── configs_biggan.yml       # Example config
+
+
 ## Results
 ![results](./figures/qualitative.png)
 
@@ -30,6 +53,14 @@ Table of Contents
 conda env create -f env.yml
 conda activate censor 
 ```  
+
+## Evaluation Metrics
+- PSNR
+- SSIM
+- LPIPS
+- Attack Success Rate
+- Gradient Cosine Similarity
+
 
 ## Baselines
 This repo contains the code for the following baselines:
@@ -74,11 +105,6 @@ Please cite our work as follows for any purpose of usage.
 }
 ```
 
-## Acknowledgement
-Part of the code is adapted from the following repos. We express great gratitude for their contribution to our community!
-- [Inverting Gradients](https://github.com/JonasGeiping/invertinggradients)  
-- [ILO](https://github.com/giannisdaras/ilo)  
-- [GGL](https://github.com/zhuohangli/GGL)  
-- [GIFD_Gradient_Inversion_Attack](https://github.com/ffhibnese/GIFD_Gradient_Inversion_Attack)
+
 
 
