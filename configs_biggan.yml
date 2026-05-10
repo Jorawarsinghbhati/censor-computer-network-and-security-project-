@@ -26,13 +26,13 @@
   
   # For input data
   generative_model : 'BigGAN'
-  gen_dataset : 'ImageNet64'
-  dataset : 'IMAGENET_IO'
-  data_path : '/depot/ninghui/data/imagenet/val'    # specify your dataset path
+  gen_dataset : 'CIFAR10'
+  dataset : 'CIFAR10'
+  data_path : './data'    # specify your dataset path
 
   #For output data
   exp_name : 'ex1_biggan_imagenet'   #Same latent space search
-  output_dir : '/scratch/gilbreth/zhan4057/gradinv/results_biggan/'
+  output_dir : './outputs/results_biggan/'
   #params for algorithm choice
   gifd : true
   gias : false
