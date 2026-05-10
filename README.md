@@ -105,6 +105,7 @@ Please cite our work as follows for any purpose of usage.
 }
 ```
 
-
+## Acknowledgement
+We thank the authors of prior gradient inversion and privacy-preserving learning works for releasing their implementations and research artifacts to the community.
 
 
